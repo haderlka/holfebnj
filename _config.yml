@@ -1,0 +1,53 @@
+# Site settings
+title: Title placeholder
+description: "A responsive Jekyll theme for dental clinics."
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the name of your domain
+logo_url: svg/min/logo.svg
+
+# Hero
+hero:
+    hero_img: hero.jpg
+    hero_title: Title placeholder
+    hero_description: A responsive Jekyll theme for dental clinics.
+
+# Contact form
+api_token: # Enter API token here
+
+# Contact info
+contact:
+    phone: 932 50 540
+    emergency: 931 53 234
+    email: contact@yoursite.com
+    address: street , <br> code
+
+# Opening hours
+monday_friday: 9:00 – 18:00
+saturday: 10:00 – 17:00
+sunday: 10:00 – 15:00
+
+# Map
+map:
+    zoom: 17
+    address: street, code, country
+    address_details: svg/min/leaf.svg
+
+# Footer
+copyright: Acknowledgement
+
+# Build settings
+markdown: kramdown
+
+exclude: [
+    package.json,
+    Gruntfile.js,
+    node_modules,
+    .sass-cache,
+    Gemfile,
+    Gemfile.lock,
+    .gitignore
+]
+
+# Theme Settings
+analytics:
+google_verification:
