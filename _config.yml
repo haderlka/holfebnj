@@ -2,7 +2,7 @@
 title: Title placeholder
 description: "A responsive Jekyll theme for dental clinics."
 baseurl: "/holfebnj" # the subpath of your site, e.g. /blog
-url: "" # the name of your domain
+url: "https://haderlka.github.io" # the name of your domain
 logo_url: svg/min/logo.svg
 
 # Hero
