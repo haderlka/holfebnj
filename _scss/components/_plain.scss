@@ -1,8 +1,6 @@
-/* ABOUT
+/* PLAIN
 -------------------------------------------------*/
-.about {
+.plain {
     @extend %space;
-    .media {
-        margin-bottom: $space;
-    }
+    margin-top: 70px;
 }

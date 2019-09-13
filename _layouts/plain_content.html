@@ -1,0 +1,25 @@
+{% include doctype-head.html %}
+<body>
+    {% include svg-defs.svg %}
+
+    <!-- Start Header -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="index.html">Zurück</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- End Header -->
+
+    <div class="container-fluid">
+      {{ content }}
+    </div>
+
+    {% include footer.html %}
+
+    {% if site.analytics %}
+        {% include analytics.html %}
+    {% endif %}
+</body>
+</html>

@@ -1,5 +1,5 @@
 module.exports = function (grunt) {
-
+    const sass = require('node-sass');
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
 
@@ -10,7 +10,7 @@ module.exports = function (grunt) {
             dist: {
                 src: ['js/bootstrap.js', 'js/owl.carousel.js', 'js/jquery.magnific-popup.js', 'js/gmap3.js', 'js/custom.js'],
                 dest: 'js/all.js'
-            } 
+            }
         },
 
         uglify: {
@@ -22,14 +22,16 @@ module.exports = function (grunt) {
         },
 
         sass: {
-            dist: {
-                options: {
-                    outputStyle: 'compressed'
-                },
-                files: {
-                    'css/main-unprefixed.css' : '_scss/main.scss'
-                }
-            }
+          options: {
+              implementation: sass,
+              sourceMap: true,
+              outputStyle: 'compressed'
+          },
+          dist: {
+              files: {
+                  'css/main-unprefixed.css' : '_scss/main.scss'
+              }
+          }
         },
 
         autoprefixer: {
@@ -46,7 +48,7 @@ module.exports = function (grunt) {
 
             jekyllBuild : {
                 command : 'jekyll build'
-            }  
+            }
         },
 
         svgmin: {
