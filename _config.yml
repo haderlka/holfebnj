@@ -33,7 +33,7 @@ map:
     address_details: svg/min/leaf.svg
 
 # Footer
-copyright: Acknowledgement
+copyright: © License
 
 # Build settings
 markdown: kramdown
